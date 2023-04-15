@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Toko Handphone</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<style>
+			.card {
+				border-radius: 10px;
+				border: none;
+				box-shadow: 0px 0px 5px #ccc;
+				transition: all 0.3s ease;
+			}
+
+			.card:hover {
+				box-shadow: 0px 0px 10px #ccc;
+				transform: translateY(-5px);
+			}
+
+			.card-img-top {
+				height: 250px;
+				object-fit: cover;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+
+			.card-title {
+				font-size: 1.2rem;
+				font-weight: bold;
+			}
+
+			.card-text {
+				font-size: 1rem;
+			}
+
+			.btn-primary {
+				background-color: #007bff;
+				border-color: #007bff;
+				font-size: 1rem;
+				font-weight: bold;
+			}
+
+			.btn-primary:hover {
+				background-color: #0069d9;
+				border-color: #0062cc;
+			}
+
+			.cta-section {
+				background-color: #f5f5f5;
+				padding: 100px 0;
+			}
+
+			.cta-section h2 {
+				font-weight: bold;
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			.cta-section form {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			.cta-section form input {
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 10px;
+				border-radius: 5px;
+				border: none;
+			}
+
+			.cta-section form button {
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				border: none;
+				background-color: #007bff;
+				color: white;
+			}
+
+			.cta-section form button:hover {
+				background-color: #0069;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Toko Handphone</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="product.html">Produk</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Tentang Kami</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero section -->
+		<div class="container py-5" data-aos="fade-down" data-aos-offset="200" data-aos-duration="900">
+			<h1 class="text-center my-5">Aksesoris dan Kebutuhan Handphone</h1>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+					<div class="card h-100">
+						<img src="https://source.unsplash.com/500x500?cable" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Produk 1</h5>
+							<p class="card-text">Deskripsi singkat produk 1.</p>
+							<p class="card-text fw-bold">$20</p>
+							<a href="#" class="btn btn-primary">Beli Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+					<div class="card h-100">
+						<img src="https://source.unsplash.com/500x500?headset" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Produk 2</h5>
+							<p class="card-text">Deskripsi singkat produk 2.</p>
+							<p class="card-text fw-bold">$25</p>
+							<a href="#" class="btn btn-primary">Beli Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+					<div class="card h-100">
+						<img src="https://source.unsplash.com/500x500?charge" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Produk 3</h5>
+							<p class="card-text">Deskripsi singkat produk 3.</p>
+							<p class="card-text fw-bold">$15</p>
+							<a href="#" class="btn btn-primary">Beli Sekarang</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+					<div class="card h-100">
+						<img src="https://source.unsplash.com/500x500?wifi" class="card-img-top" alt="..." />
+						<div class="card-body">
+							<h5 class="card-title">Produk 4</h5>
+							<p class="card-text">Deskripsi singkat produk 4.</p>
+							<p class="card-text fw-bold">$30</p>
+							<a href="#" class="btn btn-primary">Beli Sekarang</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="cta-section">
+			<div class="container" data-aos="fade-left" data-aos-offset="200" data-aos-duration="900">
+				<h2>Dapatkan promo menarik setiap hari</h2>
+				<form>
+					<input type="email" placeholder="Masukkan alamat email anda" />
+					<button type="submit">Daftar Sekarang</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer section -->
+		<footer class="footer" data-aos="fade-down" data-aos-offset="200" data-aos-duration="900">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-lg-4">
+						<h4>Tentang Kami</h4>
+						<p>Kami adalah toko handphone terkemuka di Indonesia yang menyediakan produk berkualitas dengan harga terjangkau.</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Kontak Kami</h4>
+						<p>Jl. Raya Kebayoran Lama No.25, Jakarta Selatan</p>
+						<p>+62 123 456 789</p>
+						<p>info@tokohp.com</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Ikuti Kami</h4>
+						<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JavaScript -->
+		<script>
+			AOS.init({
+				once: true,
+			});
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	</body>
+</html>

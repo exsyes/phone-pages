@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Toko Handphone</title>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<style>
+			/* Custom CSS */
+
+			.hero-image {
+				background-image: url("/img/phones.jpg");
+				background-color: #cccccc;
+				height: 500px;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				position: relative;
+			}
+
+			.hero-text {
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+			}
+
+			.feature-box {
+				margin-top: 100px;
+				margin-bottom: 100px;
+			}
+
+			.feature-box h3 {
+				font-weight: bold;
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			.feature-box .row {
+				justify-content: center;
+			}
+
+			.feature-box .col-lg-4 {
+				margin-bottom: 30px;
+			}
+
+			.feature-box .card {
+				border: none;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+				transition: 0.3s;
+			}
+
+			.feature-box .card:hover {
+				box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+			}
+
+			.feature-box .card img {
+				height: 250px;
+				object-fit: cover;
+			}
+
+			.feature-box .card-title {
+				font-weight: bold;
+				margin-top: 20px;
+				margin-bottom: 0;
+			}
+
+			.feature-box .card-text {
+				margin-top: 10px;
+				margin-bottom: 0;
+			}
+
+			.cta-section {
+				background-color: #f5f5f5;
+				padding: 100px 0;
+			}
+
+			.cta-section h2 {
+				font-weight: bold;
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			.cta-section form {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+
+			.cta-section form input {
+				width: 100%;
+				margin-bottom: 20px;
+				padding: 10px;
+				border-radius: 5px;
+				border: none;
+			}
+
+			.cta-section form button {
+				width: 100%;
+				padding: 10px;
+				border-radius: 5px;
+				border: none;
+				background-color: #007bff;
+				color: white;
+			}
+
+			.cta-section form button:hover {
+				background-color: #0069;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="#">Toko Handphone</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Beranda</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="product.html">Produk</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Tentang Kami</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Kontak</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero section -->
+		<section class="hero-image" data-aos="fade-right" data-aos-offset="200" data-aos-duration="900">
+			<div class="hero-text">
+				<h1>Toko Handphone</h1>
+				<p class="text-light">Beli handphone impianmu sekarang</p>
+				<a href="#" class="btn btn-primary btn-lg">Lihat Handphone</a>
+			</div>
+		</section>
+
+		<!-- Feature section -->
+		<section class="feature-box">
+			<div class="container" data-aos="fade-up" data-aos-offset="200" data-aos-duration="900">
+				<h3>Produk Terbaru</h3>
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card">
+							<img class="card-img-top" src="https://source.unsplash.com/500x500?iphone" alt="Handphone 1" />
+							<div class="card-body">
+								<h5 class="card-title">Handphone 1</h5>
+								<p class="card-text">Deskripsi handphone 1</p>
+								<a href="#" class="btn btn-primary">Lihat Detail</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<img class="card-img-top" src="https://source.unsplash.com/500x500?phone" alt="Handphone 2" />
+							<div class="card-body">
+								<h5 class="card-title">Handphone 2</h5>
+								<p class="card-text">Deskripsi handphone 2</p>
+								<a href="#" class="btn btn-primary">Lihat Detail</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card">
+							<img class="card-img-top" src="https://source.unsplash.com/500x500?android" alt="Handphone 3" />
+							<div class="card-body">
+								<h5 class="card-title">Handphone 3</h5>
+								<p class="card-text">Deskripsi handphone 3</p>
+								<a href="#" class="btn btn-primary">Lihat Detail</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="cta-section">
+			<div class="container" data-aos="fade-left" data-aos-offset="200" data-aos-duration="900">
+				<h2>Dapatkan promo menarik setiap hari</h2>
+				<form>
+					<input type="email" placeholder="Masukkan alamat email anda" />
+					<button type="submit">Daftar Sekarang</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Footer section -->
+		<footer class="footer" data-aos="fade-down" data-aos-offset="200" data-aos-duration="900">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-lg-4">
+						<h4>Tentang Kami</h4>
+						<p>Kami adalah toko handphone terkemuka di Indonesia yang menyediakan produk berkualitas dengan harga terjangkau.</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Kontak Kami</h4>
+						<p>Jl. Raya Kebayoran Lama No.25, Jakarta Selatan</p>
+						<p>+62 123 456 789</p>
+						<p>info@tokohp.com</p>
+					</div>
+					<div class="col-lg-4">
+						<h4>Ikuti Kami</h4>
+						<a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JavaScript -->
+		<script>
+			AOS.init({
+				once: true,
+			});
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+	</body>
+</html>
